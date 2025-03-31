@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVue - Real-time Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="date-time">Loading date and time...</div>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Enter your location">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+            <div class="city-suggestions"></div>
+        </div>
+
+        <!-- City image container -->
+        <div class="city-image-container">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="City view" class="city-image">
+            <div class="image-attribution">Photo from Unsplash</div>
+        </div>
+
+        <div class="not-found">
+            <img src="https://cdn-icons-png.flaticon.com/512/4275/4275497.png" alt="Not found">
+            <p>Oops! Location not found.</p>
+        </div>
+
+        <div class="weather-box">
+            <div class="city-name">Loading location...</div>
+            <div class="weather-icon">
+                <img src="https://openweathermap.org/img/wn/03d@4x.png" alt="Weather icon">
+            </div>
+            <div class="temperature">--<span>°C</span></div>
+            <div class="description">Loading weather data...</div>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span>--</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span>--</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h3>3-Day Forecast</h3>
+            <div class="forecast-container">
+                <div style="width:100%; text-align:center;">Loading forecast...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
